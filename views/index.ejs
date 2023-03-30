@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Web Chat</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <div id="chat">
+    <div id="user-form">
+      <form id="username-form">
+        <label id="text-content" for="username">ENTER YOUR NAME</label>
+        <input type="text" id="username" name="username" required />
+        <button type="submit">Join Chat</button>
+      </form>
+    </div>
+    <div id="chat-window">
+      <div id="user-list"></div>
+      <div id="message-list"></div>
+      <form id="message-form">
+        <input type="text" id="message" name="message" autocomplete="off" required />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/chat.js"></script>
+</body>
+
+</html>
